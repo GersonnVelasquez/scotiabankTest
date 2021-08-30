@@ -1,0 +1,29 @@
+<div class="container mt-3">
+    <h1>Detalles</h1>
+    <h5>Cuenta No. {{noCuenta}}</h5>
+
+    <div class="table-responsive  mt-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fecha Transaccion</th>
+                    <th>Monto Transaccion</th>
+                    <th>Descripcion</th>
+                    <th>Tipo Movimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="row-{{detail.id}}" class="text-white" [class.bg-green]="detail.isCredito" [class.bg-red]="detail.isDebito"
+                    *ngFor="let detail of accounsDetails ; trackBy: 'id' | trackBy">
+                    <td>{{detail.id}}</td>
+                    <td>{{detail.fechaTransaccion | date}}</td>
+                    <td>{{detail.montoTransaacion | currency}}</td>
+                    <td>{{detail.descripcion}}</td>
+                    <td>{{detail.tipoMovimiento}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

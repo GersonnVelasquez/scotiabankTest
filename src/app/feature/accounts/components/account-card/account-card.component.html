@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-body">
+        <p id="account-header" class="card-text">{{account.cuentaId}} - {{account.tipoCuenta}} </p>
+        <p id="account-detail" class="card-text">
+            <strong>{{account.valorDisponible | currency}}</strong>
+            <br>
+            <span class="text-muted">
+                Saldo disponible
+            </span>
+        </p>
+        <a id="get-details" (click)="emitGetDetailsEvent(account.cuentaId)" class="card-link margin-auto">Ver detalles</a>
+    </div>
+</div>

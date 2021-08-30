@@ -1,0 +1,4 @@
+<nav *ngIf="showNav" class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+    <span class="mx-5">{{customer?.nombreCompleto}}</span>
+    <button (click)="logOut()" type="button" class="btn btn-success mx-5">Salir</button>
+</nav>
