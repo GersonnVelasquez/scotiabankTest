@@ -14,8 +14,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr id="row-{{detail.id}}" class="text-white" [class.bg-green]="detail.isCredito" [class.bg-red]="detail.isDebito"
-                    *ngFor="let detail of accounsDetails ; trackBy: 'id' | trackBy">
+                <tr id="row-{{detail.id}}" class="text-white" [class.bg-green]="detail.isCredito"
+                    [class.bg-red]="detail.isDebito" *ngFor="let detail of accounsDetails ; trackBy: 'id' | trackBy">
                     <td>{{detail.id}}</td>
                     <td>{{detail.fechaTransaccion | date}}</td>
                     <td>{{detail.montoTransaacion | currency}}</td>

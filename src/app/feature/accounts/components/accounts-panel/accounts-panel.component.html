@@ -1,7 +1,8 @@
 <section class="container mt-3">
     <h1>Mis Cuentas</h1>
     <div class="d-flex flex-wrap gap-3 pt-2 justify-content-center justify-content-md-start">
-        <app-account-card (getDetails)="goToDetails($event)" [account]="account" *ngFor="let account of accounts; trackBy: 'id' | trackBy">
+        <app-account-card (getDetails)="goToDetails($event)" [account]="account"
+            *ngFor="let account of accounts; trackBy: 'id' | trackBy">
         </app-account-card>
     </div>
 </section>

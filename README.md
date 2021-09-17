@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 Run `npm install` then `ng serve` to start. Navigate to `http://localhost:4200/`.
+User and Password: `admin` `admin`
 
 ## Running unit tests
 

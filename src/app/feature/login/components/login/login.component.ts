@@ -20,8 +20,14 @@ export class LoginComponent implements OnInit {
   }
 
 
-  logIn() {
-    this.auth.logIn();
+  logIn(user: string, password: string) {
+    let usuarioCorrecto = user === 'admin' && password === 'admin';
+    if (usuarioCorrecto) {
+      this.auth.logIn();
+    }
+    else {
+      alert('Credenciales incorrectas');
+    }
   }
 
 }
